@@ -1,0 +1,23 @@
+# Production dependencies for Medallion Architecture Pipeline
+apache-airflow>=2.8.0
+requests>=2.31.0
+pyspark>=3.5.0
+minio>=7.2.0
+pyarrow>=14.0.0
+
+# Additional production dependencies
+psutil>=5.9.0  # For system monitoring
+py4j>=0.10.9   # Required by PySpark
+numpy>=1.24.0  # Required by Arrow
+pandas>=2.0.0  # For .toPandas() compatibility in tests only
+
+# Security and monitoring
+cryptography>=41.0.0
+urllib3>=1.26.0
+
+# Development and testing dependencies
+pytest>=7.4.0
+pytest-airflow>=0.0.4
+
+# Optional: For enhanced monitoring
+prometheus-client>=0.17.0

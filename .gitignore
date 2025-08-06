@@ -1,0 +1,18 @@
+# Project
+venv/
+applications/__pycache__/*
+*.pyc
+__pycache__/
+
+# Airflow
+applications/airflow/dags/__pycache__/*
+applications/airflow/dags/__pycache__/
+applications/airflow/logs/
+
+# Environment variables (sensitive data)
+.env
+applications/airflow/.env
+
+# Claude Code settings
+.claude/
+
